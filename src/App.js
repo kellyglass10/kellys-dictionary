@@ -12,12 +12,29 @@ export default function App() {
         <main>
           <Dictionary />
         </main>
-        <footer className="App-footer">
-          <small>
-            Coded by Kelly Glass. Open-sourced on Github and hosted on Netlify
-          </small>
-        </footer>
       </div>
+      <footer>
+        Coded by{" "}
+        <a
+          href="https://kelly-glass-portfolio.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <strong>Kelly Glass</strong>
+        </a>
+        . Open-sourced on{" "}
+        <a
+          href="https://github.com/kellyglass10"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <strong>Github</strong>
+        </a>{" "}
+        and hosted on{" "}
+        <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
+          <strong>Netlify</strong>
+        </a>
+      </footer>
     </div>
   );
 }

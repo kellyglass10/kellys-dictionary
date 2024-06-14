@@ -1,7 +1,7 @@
-.Dictionary {
-  text-align: left;
-}
-
 body {
   background: #fee9e3;
+}
+
+.Dictionary section {
+  background: white;
 }

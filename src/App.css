@@ -14,7 +14,17 @@ body {
   font-size: 30px;
 }
 
-.App-footer {
+footer {
   text-align: center;
   margin: 30px 0;
+}
+
+.App footer a {
+  color: rgb(181, 143, 93);
+  text-decoration: none;
+  transition: 200ms all ease-in-out;
+}
+
+.App footer a:hover {
+  color: rgb(123, 75, 13);
 }
