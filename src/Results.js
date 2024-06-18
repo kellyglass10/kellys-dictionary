@@ -1,6 +1,7 @@
 import React from "react";
 import Phonetic from "./Phonetic";
 import Meaning from "./Meaning";
+import "./Results.css";
 
 export default function Result(props) {
   if (props.results) {
@@ -8,19 +9,22 @@ export default function Result(props) {
       <div className="Results">
         <section>
           <h2>{props.results.word}</h2>
-          {props.results.phonetics.map(function (phonetic, index) {
-            return (
-              <div key={index}>
-                <Phonetic phonetic={phonetic} />
-              </div>
-            );
-          })}
+          <div className="d-flex flex-row gap-4">
+            {props.results.phonetics.map(function (phonetic, index) {
+              return (
+                <div key={index}>
+                  <Phonetic phonetic={phonetic} />
+                </div>
+              );
+            })}
+          </div>
         </section>
+
         {props.results.meanings.map(function (meaning, index) {
           return (
-            <section key={index}>
+            <div key={index}>
               <Meaning meaning={meaning} />
-            </section>
+            </div>
           );
         })}
       </div>
